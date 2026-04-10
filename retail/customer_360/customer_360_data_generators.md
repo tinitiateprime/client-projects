@@ -1,7 +1,7 @@
 # 🧪 Customer 360 Data Generators
 
 [🏠 Back to Home](../../readme.md)
-[🧩 Back to Personalization Platform](customer_360_personalization_platform.md)
+[🧩 Back to Personalization Platform](customer_platform.md)
 
 ## 📌 Python Generator (100,000 Records Per Table)
 ```python
@@ -157,3 +157,4 @@ if __name__ == "__main__":
     generate_interactions()
     print("Generated 100,000 records for each Customer 360 table.")
 ```
+

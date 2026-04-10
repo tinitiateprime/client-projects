@@ -1,7 +1,7 @@
 # ✅ Customer 360 Detailed Assignment Solutions
 
 [🏠 Back to Home](../../readme.md)
-[🧩 Back to Personalization Platform](customer_360_personalization_platform.md)
+[🧩 Back to Personalization Platform](customer_platform.md)
 ## 📌 How To Use This Document
 This is an instructor-ready answer key for all 20 Customer 360 assignments.  
 Each assignment includes:
@@ -415,4 +415,5 @@ group by 1;
 - 16-20 assignments: 25 points
 
 Pass threshold recommendation: `>= 70/100`.
+
 

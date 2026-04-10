@@ -1,7 +1,7 @@
 # 🎯 Customer 360 Interview Questions and Resume Bullets
 
 [🏠 Back to Home](../../readme.md)
-[🧩 Back to Personalization Platform](customer_360_personalization_platform.md)
+[🧩 Back to Personalization Platform](customer_platform.md)
 
 ## 🎯 How to present this project
 Use this project when the role expects:
@@ -56,3 +56,4 @@ Use this project when the role expects:
 - Designed Bronze, Silver, and Gold data layers to support customer profiling, segmentation, and personalization use cases.
 - Implemented identity resolution and master customer key mapping to improve customer match accuracy across channels.
 - Enabled BI and downstream marketing activation through curated Gold-layer datasets and reusable dimensional models.
+

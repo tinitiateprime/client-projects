@@ -1,7 +1,7 @@
 # 🧱 Customer 360 SQL Pack
 
 [🏠 Back to Home](../../readme.md)
-[🧩 Back to Personalization Platform](customer_360_personalization_platform.md)
+[🧩 Back to Personalization Platform](customer_platform.md)
 
 ## 📌 Overview
 This document centralizes all SQL used by the Customer 360 project:
@@ -199,3 +199,4 @@ left join {{ ref('fact_order') }} o
     on c.customer_sk = o.customer_sk
 group by 1
 ```
+

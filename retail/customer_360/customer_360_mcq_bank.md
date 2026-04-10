@@ -1,7 +1,7 @@
 # 📘 Customer 360 MCQ Bank
 
 [🏠 Back to Home](../../readme.md)
-[🧩 Back to Personalization Platform](customer_360_personalization_platform.md)
+[🧩 Back to Personalization Platform](customer_platform.md)
 ## 📌 MCQ Test (Set 1: Questions 1-10)
 1. Which layer should store immutable raw source files?  
 A) Gold  
@@ -149,4 +149,5 @@ D) Longer ETL scripts
 18) C  
 19) B  
 20) C  
+
 

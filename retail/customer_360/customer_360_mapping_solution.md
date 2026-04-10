@@ -1,7 +1,7 @@
 # 🗺️ Customer 360 Mapping Solution
 
 [🏠 Back to Home](../../readme.md)
-[🧩 Back to Personalization Platform](customer_360_personalization_platform.md)
+[🧩 Back to Personalization Platform](customer_platform.md)
 ## 📌 Purpose
 Reference solution for Assignment 1:
 - source column
@@ -100,4 +100,5 @@ Use this rubric to score students (100 points):
 - Explicit transform rule per row.
 - Explicit null/default handling per row.
 - Correct placement into `dim_customer`, contact dims, and fact tables.
+
 
