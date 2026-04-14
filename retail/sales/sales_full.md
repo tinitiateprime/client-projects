@@ -40,6 +40,7 @@ G --> H[Reporting and Forecasting]
 
 ### 🧱 SQL
 [Sales SQL Pack](sales_sql.md)
+[Sales SQL DDL File](sales_sql.sql)
 
 ### 🧪 Data Generators
 [Sales Data Generators](sales_data_generators.md)

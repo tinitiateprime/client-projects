@@ -1,10 +1,5 @@
-# 🧱 Inventory SQL Pack
+-- Inventory warehouse DDL
 
-[🏠 Back to Home](../../readme.md)
-[📦 Back to Inventory Platform](inventory_full.md)
-
-## 📌 Core DDL
-```sql
 CREATE TABLE dim_product (
     product_id           BIGSERIAL PRIMARY KEY,
     sku                  VARCHAR(50) NOT NULL UNIQUE,
@@ -122,25 +117,3 @@ CREATE TABLE stock_transfer_line (
     shipped_qty          INTEGER NOT NULL DEFAULT 0,
     received_qty         INTEGER NOT NULL DEFAULT 0
 );
-```
-
-## 📊 Reporting SQL
-```sql
-SELECT
-    s.store_code,
-    p.sku,
-    p.product_name,
-    si.on_hand_qty - si.reserved_qty AS available_qty
-FROM store_inventory si
-JOIN dim_store s ON s.store_id = si.store_id
-JOIN dim_product p ON p.product_id = si.product_id;
-
-SELECT
-    w.warehouse_code,
-    p.sku,
-    p.product_name,
-    wi.on_hand_qty - wi.allocated_qty AS net_available_qty
-FROM warehouse_inventory wi
-JOIN dim_warehouse w ON w.warehouse_id = wi.warehouse_id
-JOIN dim_product p ON p.product_id = wi.product_id;
-```

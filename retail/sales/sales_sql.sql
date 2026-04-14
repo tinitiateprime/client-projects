@@ -1,11 +1,5 @@
-# 🧱 Sales SQL Pack
+-- Sales warehouse DDL
 
-[🏠 Back to Home](../../readme.md)
-[📈 Back to Sales Platform](sales_full.md)
-[📄 Sales SQL File](sales_sql.sql)
-
-## 📌 Core DDL
-```sql
 CREATE TABLE dim_date (
     date_key             INTEGER PRIMARY KEY,
     full_date            DATE NOT NULL,
@@ -34,7 +28,7 @@ CREATE TABLE dim_store (
 
 CREATE TABLE dim_channel (
     channel_id           BIGSERIAL PRIMARY KEY,
-    channel_name         VARCHAR(50) NOT NULL UNIQUE -- store, web, app, marketplace
+    channel_name         VARCHAR(50) NOT NULL UNIQUE
 );
 
 CREATE TABLE fact_sales (
@@ -82,22 +76,3 @@ CREATE TABLE fact_sales_target (
     target_net_sales     DECIMAL(14,2) NOT NULL,
     target_units         INTEGER NOT NULL
 );
-```
-
-## 📄 Standalone SQL File
-[Sales SQL DDL](sales_sql.sql)
-
-## 📊 Reporting SQL
-```sql
-SELECT
-    d.year_num,
-    d.month_num,
-    c.channel_name,
-    SUM(f.net_amount) AS net_sales,
-    SUM(f.quantity) AS units_sold
-FROM fact_sales f
-JOIN dim_date d ON d.date_key = f.date_key
-JOIN dim_channel c ON c.channel_id = f.channel_id
-GROUP BY d.year_num, d.month_num, c.channel_name
-ORDER BY d.year_num, d.month_num, c.channel_name;
-```

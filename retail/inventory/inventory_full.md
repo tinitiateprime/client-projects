@@ -42,6 +42,7 @@ G --> H[Reporting and Alerts]
 
 ### 🧱 SQL
 [Inventory SQL Pack](inventory_sql.md)
+[Inventory SQL DDL File](inventory_sql.sql)
 
 ### 🧪 Data Generators
 [Inventory Data Generators](inventory_data_generators.md)

@@ -41,6 +41,7 @@ G --> H[Reporting and Alerts]
 
 ### 🧱 SQL
 [Supply Chain SQL Pack](supply_chain_sql.md)
+[Supply Chain SQL DDL File](supply_chain_sql.sql)
 
 ### 🧪 Data Generators
 [Supply Chain Data Generators](supply_chain_data_generators.md)

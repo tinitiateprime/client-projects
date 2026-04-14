@@ -1,10 +1,5 @@
-# 🧱 Supply Chain SQL Pack
+-- Supply chain warehouse DDL
 
-[🏠 Back to Home](../../readme.md)
-[🚚 Back to Supply Chain Platform](supply_chain_full.md)
-
-## 📌 Core DDL
-```sql
 CREATE TABLE dim_supplier (
     supplier_id          BIGSERIAL PRIMARY KEY,
     supplier_code        VARCHAR(40) NOT NULL UNIQUE,
@@ -87,4 +82,3 @@ CREATE TABLE fact_supply_chain_kpi (
     avg_lead_time_days   DECIMAL(8,2),
     damaged_rate_pct     DECIMAL(5,2)
 );
-```

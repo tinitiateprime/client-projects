@@ -1,16 +1,5 @@
-# 🧱 Customer 360 SQL Pack
+-- Customer 360 warehouse DDL
 
-[🏠 Back to Home](../../readme.md)
-[🧩 Back to Personalization Platform](customer_platform.md)
-
-## 📌 Overview
-This document centralizes all SQL used by the Customer 360 project:
-- Core Customer 360 DDL
-- Duplicate detection SQL
-- dbt model SQL examples
-
-## 🧱 Core DDL (Customer Key: `customer_id`)
-```sql
 CREATE TABLE dim_customer (
     customer_sk           BIGSERIAL PRIMARY KEY,
     first_name            VARCHAR(100),
@@ -71,4 +60,11 @@ CREATE TABLE fact_order (
     order_ts              TIMESTAMP NOT NULL
 );
 
-
+CREATE TABLE fact_customer_interaction (
+    interaction_sk        BIGSERIAL PRIMARY KEY,
+    customer_sk           BIGINT NOT NULL REFERENCES dim_customer(customer_sk),
+    interaction_type      VARCHAR(50) NOT NULL,
+    channel               VARCHAR(30) NOT NULL,
+    campaign_id           VARCHAR(50),
+    interaction_ts        TIMESTAMP NOT NULL
+);
